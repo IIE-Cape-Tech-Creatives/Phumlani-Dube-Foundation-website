@@ -1,0 +1,64 @@
+/* EventCarousel.css */
+.carousel-container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .event-card {
+    position: relative;
+  }
+  
+  .event-image-wrapper {
+    position: relative;
+  }
+  
+  .event-image {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .event-date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .event-details {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .event-card:hover .event-details {
+    opacity: 1;
+  }
+  
+  /* Custom arrows for slick slider */
+  .custom-next-arrow,
+  .custom-prev-arrow {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+  }
+  
+  .custom-next-arrow:before,
+  .custom-prev-arrow:before {
+    font-size: 20px;
+    color: white;
+  }
+  
